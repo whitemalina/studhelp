@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html id="root">
+  <head>
+    <title>StudHelp - Преподователям</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Material+Icons|Russo+One&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="s/src/css/1726.css" />
+    <script type="text/javascript">
+      var navTitle = "StudHelp";
+    </script>
+
+    <link rel="stylesheet" href="s/src/base.min.css" />
+    <link rel="stylesheet" href="s/src/layer7.min.css?v=211814" />
+
+    <script src="s/src/jquery-1.12.4.min.js"></script>
+
+    <script src="s/src/uwnd.min.js?v=221200"></script>
+    <script type="text/javascript">
+      /* --- UCOZ-JS-INIT_CODE --- */
+      window.ulb = {
+        photoPage: "Перейти на страницу с фотографией.",
+        closeBtn: "Закрыть",
+        error:
+          "Запрошенный контент не может быть загружен. Пожалуйста, попробуйте позже.",
+        next: "Следующий",
+        prev: "Предыдущий",
+        btnPlay: "Начать слайдшоу",
+        btnToggle: "Изменить размер",
+      };
+      window.bottomInfoData = [
+        {
+          button: "Согласиться",
+          id: "cookiePolicy",
+          cookieKey: "cPolOk",
+          message:
+            "Этот сайт использует файлы cookies для более комфортной работы пользователя. Продолжая просмотр страниц сайта, вы соглашаетесь с <a href=/index/cookiepolicy target=_blank >Политикой использования файлов cookies</a>.",
+        },
+      ];
+      /* --- UCOZ-JS-END --- */
+    </script>
+
+    <link rel="stylesheet" href="s/src/ulightbox/ulightbox.min.css" />
+    <script src="s/src/ulightbox/ulightbox.min.js"></script>
+    <script src="s/src/bottomInfo.min.js"></script>
+
+    <style type="text/css">
+      .UhideBlock {
+        display: none;
+      }
+    </style>
+    <script type="text/javascript">
+      //<!--
+      function uSocialLogin(t) {
+        var params = {
+          vkontakte: {
+            width: 790,
+            height: 400,
+          },
+          facebook: {
+            width: 950,
+            height: 520,
+          },
+          yandex: {
+            width: 870,
+            height: 515,
+          },
+          google: {
+            width: 700,
+            height: 600,
+          },
+          ok: {
+            width: 710,
+            height: 390,
+          },
+        };
+        var ref = escape(
+          location.protocol +
+            "//" +
+            ("testiasdd.ucoz.net" || location.hostname) +
+            location.pathname +
+            (location.hash
+              ? (location.search ? location.search + "&" : "?") +
+                "rnd=" +
+                Date.now() +
+                location.hash
+              : location.search || "")
+        );
+        // var ref = escape(location.href);
+        window.open(
+          "/" + t + "?ref=" + ref,
+          "conwin",
+          "width=" +
+            params[t].width +
+            ",height=" +
+            params[t].height +
+            ",status=1,resizable=1,left=" +
+            parseInt(screen.availWidth / 2 - params[t].width / 2) +
+            ",top=" +
+            parseInt(screen.availHeight / 2 - params[t].height / 2 - 20) +
+            "screenX=" +
+            parseInt(screen.availWidth / 2 - params[t].width / 2) +
+            ",screenY=" +
+            parseInt(screen.availHeight / 2 - params[t].height / 2 - 20)
+        );
+        return false;
+      }
+      //-->
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="s/src/social.css" />
+  </head>
+
+  <body class="tmpl_body">
+    <!--U1AHEADER1Z-->
+    <header>
+      <div class="wrapper">
+        <div id="header">
+          <div class="head-t">
+            <div class="head-l">
+              <div id="site-logo">
+                <span class="site-l">
+                  <div class="nav-head">
+                    <div class="material-icons i_menu">menu</div>
+                  </div>
+                  <span class="site-n">
+                    <a href="/">
+                      <span class="logo-n"></span>
+                      <!-- <logo> -->StudHelp
+                      <!-- </logo> -->
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="head-r">
+              <div id="sch-box">
+                <div class="header-search-box">
+                  <div class="searchForm">
+                    <form
+                      onsubmit="this.sfSbm.disabled=true"
+                      method="get"
+                      style="margin: 0"
+                      action="/search/"
+                    >
+                      <div align="center" class="schQuery">
+                        <input
+                          type="text"
+                          name="q"
+                          maxlength="30"
+                          size="20"
+                          class="queryField"
+                        />
+                      </div>
+                      <div align="center" class="schBtn">
+                        <input
+                          type="submit"
+                          class="searchSbmFl"
+                          name="sfSbm"
+                          value="Найти"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <div id="catmenu">
+              <!-- <sblock_nmenu> -->
+
+              <!-- <bc> -->
+              <div id="uNMenuDiv1" class="uMenuV">
+                <ul class="uMenuRoot">
+                  <li>
+                    <a href="/"><span>Главная страница</span></a>
+                  </li>
+                  <li>
+                    <a class="uMenuItemA" href="/index/prepodovateljam/0-5.html"
+                      ><span>Преподавателям</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/index/studentam/0-6.html"
+                      ><span>Студентам</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/index/test/0-4.html"
+                      ><span>Тест на мышление</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- </bc> -->
+
+              <!-- </sblock_nmenu> -->
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--/U1AHEADER1Z-->
+    <div class="wrapper main_wrapper">
+      <div id="casing" class="module_index">
+        <!-- <middle> -->
+        <div id="content">
+          <section>
+            <!-- <body> -->
+            <div id="nativeroll_video_cont" style="display: none"></div>
+            <p>
+              <span style="font-size: 16px"
+                >Здравствуйте,&nbsp;уважаемые&nbsp;педагоги!&nbsp;<br />
+                Команда STUDHELP провела тестирование &quot;Диагностика
+                доминирующей перцептивной модальности С. Ефремцева&quot; и были
+                получены следующие результаты:</span
+              >
+            </p>
+
+            <p>
+              <br />
+              <span style="font-size: 16px"
+                >38% детей имеют
+                <span style="color: #ff0000">визуальный</span> тип восприятия
+                информации<br />
+                32% детей имеют
+                <span style="color: #0000ff">кинестетический</span> тип
+                восприятия информации</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 18px"
+                >(Тестирование проходили студенты 1 курса Сургутского
+                политехнического колледжа).</span
+              >
+            </p>
+
+            <hr />
+            <p>
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >Преподавателю в процессе организации учебной
+                                деятельности необходимо не только уметь
+                                разделять обучаемых по типам модальности, но и
+                                иметь информацию об особенностях сенсорного
+                                восприятия каждого обучаемого в
+                              </span></span
+                            >
+                          </span>
+                        </span> </span
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black">группе.</span></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p align="center" style="text-align: center; margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >Особенности в обучении и методы преподавания.
+                              </span></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><b
+                        ><span style="font-size: 14pt"
+                          ><span style="background: white"
+                            ><span style="line-height: 107%"
+                              ><span
+                                style="font-family: 'Times New Roman', serif"
+                                ><span style="color: black">Визуалы</span></span
+                              >
+                            </span>
+                          </span>
+                        </span> </b
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >:
+                                <u>при обучении необходимо использовать</u>
+                                слова, описывающие цвет, размер, форму,
+                                местоположение; следует выделять различными
+                                цветами важнейшие аспекты содержания; записывать
+                                действия; использовать схемы, таблицы, наглядные
+                                пособия. Таким учащимся результативнее самим
+                                читать текст учебника, чем слушать устное
+                                объяснение темы учителем.<br />
+                                <u>Для повышения работоспособности</u> визуалов
+                                освещение рабочего места должно быть хорошим.<br />
+                                <u>Для привлечения внимания</u> визуала к
+                                учителю на протяжении всего урока, внешний вид
+                                учителя должен характеризоваться яркими,
+                                цветными деталями (шарфик, галстук, одежда и
+                                т.д.).</span
+                              ></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><b
+                        ><span style="font-size: 14pt"
+                          ><span style="background: white"
+                            ><span style="line-height: 107%"
+                              ><span
+                                style="font-family: 'Times New Roman', serif"
+                                ><span style="color: black"
+                                  >Кинестетики</span
+                                ></span
+                              >
+                            </span>
+                          </span>
+                        </span> </b
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >:
+                                <u>при обучении следует использовать</u> жесты,
+                                прикосновения, говорить следует медленно.
+                                Необходимо предлагать им задания, связанные с
+                                практической деятельностью (опыты, лабораторные
+                                работы, проигрывание информации, переписывание
+                                текстов, сбор гербария и т.д.). При объяснении
+                                новой темы можно использовать прием
+                                преувеличения значимости событий.<br />
+                                <u>Для повышения работоспособности</u>
+                                кинестетикам необходимо комфортное состояние
+                                тела: тесная обувь или низкая/высокая
+                                температура в классе негативно влияют на
+                                протекание познавательных процессов.</span
+                              ></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><b
+                        ><span style="font-size: 14pt"
+                          ><span style="background: white"
+                            ><span style="line-height: 107%"
+                              ><span
+                                style="font-family: 'Times New Roman', serif"
+                                ><span style="color: black">Аудиалы</span></span
+                              >
+                            </span>
+                          </span>
+                        </span> </b
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >: <u>следует обучать</u> использованием
+                                лингафонной системы (ПК, аудио-, видео- и
+                                мультимедийные средства) и лекционных
+                                методов.<br />
+                                <u>Их работоспособность повышается</u> в
+                                условиях тишины, незначительный шум в классе
+                                мешает усвоению информации (помехи для слухового
+                                восприятия).</span
+                              ></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >Замечания ученикам необходимо также делать на
+                                языке их модальности:
+                              </span></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >визуалу &ndash; покачать головой, погрозить
+                                пальцем;
+                              </span></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >кинестетику &ndash; легко прикоснуться к плечу;
+                              </span></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >аудиалу &ndash; сказать шепотом:
+                                &laquo;Ш-ш-ш&raquo;.</span
+                              ></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >Правильное определение психофизиологического
+                                места каждого ученика в классе активизирует
+                                учебный процесс, предупреждает возникновение
+                                невроза и стресса, снимает неосознаваемую
+                                реакцию защиты от новой информации.</span
+                              ></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p align="center" style="text-align: center; margin-bottom: 11px">
+              &nbsp;
+            </p>
+
+            <p align="center" style="text-align: center; margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >Примерная схема расположения учащихся в
+                                классе:</span
+                              ></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p align="center" style="text-align: center; margin-bottom: 11px">
+              &nbsp;
+            </p>
+
+            <table
+              class="Table"
+              style="margin-left: 237px; border-collapse: collapse"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    style="
+                      border-bottom: 1px solid black;
+                      width: 155px;
+                      padding: 0cm 0cm 0cm 0cm;
+                      border-top: 1px solid black;
+                      border-right: 1px solid black;
+                      border-left: 1px solid black;
+                    "
+                    valign="top"
+                  >
+                    <p
+                      align="center"
+                      style="text-align: center; margin-bottom: 11px"
+                    >
+                      <span style="font-size: 11pt"
+                        ><span style="tab-stops: 2cm"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: Calibri, sans-serif"
+                              ><span style="font-size: 14pt"
+                                ><span style="background: white"
+                                  ><span style="line-height: 107%"
+                                    ><span
+                                      style="
+                                        font-family: 'Times New Roman', serif;
+                                      "
+                                      ><span style="color: black"
+                                        >Классная доска</span
+                                      ></span
+                                    >
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p style="margin-bottom: 11px">&nbsp;</p>
+
+            <table
+              class="Table"
+              style="
+                margin-left: -1px;
+                background: white;
+                border-collapse: collapse;
+              "
+              width="624"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    style="
+                      border-bottom: 1px solid black;
+                      width: 208px;
+                      padding: 0cm 0cm 0cm 0cm;
+                      background-color: white;
+                      border-top: 1px solid black;
+                      border-right: 1px solid black;
+                      border-left: 1px solid black;
+                    "
+                    valign="top"
+                  >
+                    <p
+                      align="center"
+                      style="text-align: center; margin-bottom: 11px"
+                    >
+                      <span style="font-size: 11pt"
+                        ><span style="tab-stops: 2cm"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: Calibri, sans-serif"
+                              ><span style="font-size: 14pt"
+                                ><span style="background: white"
+                                  ><span style="line-height: 107%"
+                                    ><span
+                                      style="
+                                        font-family: 'Times New Roman', serif;
+                                      "
+                                      ><span style="color: black"
+                                        >1-ый ряд</span
+                                      ></span
+                                    >
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </p>
+
+                    <p
+                      align="center"
+                      style="text-align: center; margin-bottom: 11px"
+                    >
+                      <span style="font-size: 11pt"
+                        ><span style="tab-stops: 2cm"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: Calibri, sans-serif"
+                              ><span style="font-size: 14pt"
+                                ><span style="background: white"
+                                  ><span style="line-height: 107%"
+                                    ><span
+                                      style="
+                                        font-family: 'Times New Roman', serif;
+                                      "
+                                      ><span style="color: black"
+                                        >Левополушарные:</span
+                                      ></span
+                                    >
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </p>
+
+                    <p
+                      align="center"
+                      style="text-align: center; margin-bottom: 11px"
+                    >
+                      <span style="font-size: 11pt"
+                        ><span style="tab-stops: 2cm"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: Calibri, sans-serif"
+                              ><span style="font-size: 14pt"
+                                ><span style="background: white"
+                                  ><span style="line-height: 107%"
+                                    ><span
+                                      style="
+                                        font-family: 'Times New Roman', serif;
+                                      "
+                                      ><span style="color: black"
+                                        >аудиалы</span
+                                      ></span
+                                    >
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      border-bottom: 1px solid black;
+                      width: 208px;
+                      padding: 0cm 0cm 0cm 0cm;
+                      background-color: white;
+                      border-top: 1px solid black;
+                      border-right: 1px solid black;
+                      border-left: none;
+                    "
+                    valign="top"
+                  >
+                    <p
+                      align="center"
+                      style="text-align: center; margin-bottom: 11px"
+                    >
+                      <span style="font-size: 11pt"
+                        ><span style="tab-stops: 2cm"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: Calibri, sans-serif"
+                              ><span style="font-size: 14pt"
+                                ><span style="background: white"
+                                  ><span style="line-height: 107%"
+                                    ><span
+                                      style="
+                                        font-family: 'Times New Roman', serif;
+                                      "
+                                      ><span style="color: black"
+                                        >2-ой ряд</span
+                                      ></span
+                                    >
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </p>
+
+                    <p
+                      align="center"
+                      style="text-align: center; margin-bottom: 11px"
+                    >
+                      <span style="font-size: 11pt"
+                        ><span style="tab-stops: 2cm"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: Calibri, sans-serif"
+                              ><span style="font-size: 14pt"
+                                ><span style="background: white"
+                                  ><span style="line-height: 107%"
+                                    ><span
+                                      style="
+                                        font-family: 'Times New Roman', serif;
+                                      "
+                                      ><span style="color: black"
+                                        >Равнополушарные:</span
+                                      ></span
+                                    >
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </p>
+
+                    <p
+                      align="center"
+                      style="text-align: center; margin-bottom: 11px"
+                    >
+                      <span style="font-size: 11pt"
+                        ><span style="tab-stops: 2cm"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: Calibri, sans-serif"
+                              ><span style="font-size: 14pt"
+                                ><span style="background: white"
+                                  ><span style="line-height: 107%"
+                                    ><span
+                                      style="
+                                        font-family: 'Times New Roman', serif;
+                                      "
+                                      ><span style="color: black"
+                                        >визуалы,
+                                        аудиалы,&nbsp;кинестетики</span
+                                      ></span
+                                    >
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      border-bottom: 1px solid black;
+                      width: 208px;
+                      padding: 0cm 0cm 0cm 0cm;
+                      background-color: white;
+                      border-top: 1px solid black;
+                      border-right: 1px solid black;
+                      border-left: none;
+                    "
+                    valign="top"
+                  >
+                    <p
+                      align="center"
+                      style="text-align: center; margin-bottom: 11px"
+                    >
+                      <span style="font-size: 11pt"
+                        ><span style="tab-stops: 2cm"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: Calibri, sans-serif"
+                              ><span style="font-size: 14pt"
+                                ><span style="background: white"
+                                  ><span style="line-height: 107%"
+                                    ><span
+                                      style="
+                                        font-family: 'Times New Roman', serif;
+                                      "
+                                      ><span style="color: black"
+                                        >3-ий ряд</span
+                                      ></span
+                                    >
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </p>
+
+                    <p
+                      align="center"
+                      style="text-align: center; margin-bottom: 11px"
+                    >
+                      <span style="font-size: 11pt"
+                        ><span style="tab-stops: 2cm"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: Calibri, sans-serif"
+                              ><span style="font-size: 14pt"
+                                ><span style="background: white"
+                                  ><span style="line-height: 107%"
+                                    ><span
+                                      style="
+                                        font-family: 'Times New Roman', serif;
+                                      "
+                                      ><span style="color: black"
+                                        >Правополушарные:</span
+                                      ></span
+                                    >
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </p>
+
+                    <p
+                      align="center"
+                      style="text-align: center; margin-bottom: 11px"
+                    >
+                      <span style="font-size: 11pt"
+                        ><span style="tab-stops: 2cm"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: Calibri, sans-serif"
+                              ><span style="font-size: 14pt"
+                                ><span style="background: white"
+                                  ><span style="line-height: 107%"
+                                    ><span
+                                      style="
+                                        font-family: 'Times New Roman', serif;
+                                      "
+                                      ><span style="color: black"
+                                        >визуалы,&nbsp;кинестетики</span
+                                      ></span
+                                    >
+                                  </span>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p style="margin-bottom: 11px">&nbsp;</p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >Для наиболее лучшего восприятия учащимися
+                                информации с классной доски сочетание цветов
+                                должно быть следующим:</span
+                              ></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="tab-stops: 2cm"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: Calibri, sans-serif"
+                      ><span style="font-size: 14pt"
+                        ><span style="background: white"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 'Times New Roman', serif"
+                              ><span style="color: black"
+                                >Для левополушарных - светлая доска и темный
+                                мел; для правополушарных - темная доска и
+                                светлый мел. Правополушарные учащиеся лучше
+                                воспринимают низкие (мужские) голоса, а
+                                левополушарные высокие (женские) голоса.</span
+                              ></span
+                            >
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p align="center" style="text-align: center; margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Учителя также имеют различные модальностные
+                            характеристики.</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Учитель и ученики могут неточно понимать друг
+                            друга, если обмениваются информацией в терминах
+                            разных модальностей (говорят на различных сенсорных
+                            языках). Использование учителем языка собственной
+                            модальности способно обеспечить взаимопонимание
+                            только с себе подобными учащимися. В том случае,
+                            если информация учителя предоставляется в
+                            модальности, которая совпадает с модальностью
+                            ученика, то эта часть материала будет понята и
+                            усвоена. Если же учитель &laquo;не попал в
+                            модальность&raquo; обучаемого, то возникает пробел в
+                            знаниях. Конечно, у многих школьников все сенсорные
+                            системы работают на прием информации, однако у
+                            каждого есть ведущая или предпочитаемая модальность,
+                            от которой зависят многие
+                            индивидуально-психологические характеристики
+                            школьников.</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p align="center" style="text-align: center; margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Учитель может помочь развить другие каналы
+                            восприятия.</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Например, это можно сделать так. После прочтения
+                            текста учащиеся рассказывают о своих впечатлениях,
+                            отвечая на вопросы:</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Визуал &ndash; Где он себя&nbsp;видел?</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Аудиал &ndash; Что
+                            он&nbsp;слышал&nbsp;вокруг?</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Кинестетик &ndash; Что он&nbsp;чувствовал?</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Учитель вопросами помогает учащимся перейти во
+                            время рассказа в другие модальности:</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Визуалу &ndash; Что ты&nbsp;слышал?
+                            Что&nbsp;чувствовал?</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Аудиалу &ndash; Что ты&nbsp;увидел&nbsp;рядом?
+                            Поделись с нами своими&nbsp;ощущениями.</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Кинестетику &ndash;&nbsp;Опиши, как выглядела
+                            поляна? Какие&nbsp;звуки&nbsp;окружали тебя?</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >В процессе обучения учитель должен обладать гибким
+                            стилем деятельности, включающим различные реакции,
+                            воздействующие на визуальную, аудиальную и
+                            кинестетическую сенсорные системы. Воздействуя на
+                            разные сенсорные системы, можно добиться
+                            взаимопонимания и личностного контакта с каждым
+                            учащимся.
+                          </span></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Тем не менее, итог учебной работы обычно сводится к
+                            оценке (отметке). Учитель оценивает итог
+                            деятельности: грамотность, аккуратность,
+                            правильность и т.д. Учащиеся ждут, что оценят не
+                            только итог, но и их личные усилия в процессе
+                            деятельности (концентрация внимания, терпение,
+                            усталость, степень затраченных сил и времени,
+                            эмоциональный вклад и т.д.).</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Оценивая правополушарных учащихся, рекомендуется:
+                            использовать вопросы &laquo;развернутого&raquo;
+                            типа, творческие отчеты, графическое отражение
+                            собственных достижений и.т.д. Визуал должен
+                            &laquo;увидеть&raquo; результат своей учебной
+                            деятельности в цветном изображении, а кинестетик -
+                            &laquo;ощутить&raquo; через самостоятельное
+                            изображение результата, например, в графике.</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Оценивая левополушарных учащихся, можно
+                            использовать задания с неограниченным временем
+                            выполнения, вопросы &laquo;закрытого&raquo; типа
+                            (тесты), самооценку, анализ и оценку деятельности
+                            одноклассников и т.д.</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >При оценивании знаний преподавателю следует
+                            учитывать, что существует гипотеза Д. Грея о более
+                            высокой чувствительности правополушарных учащихся к
+                            поощряющим стимулам, а левополушарных &ndash; к
+                            наказывающим.</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p style="margin-bottom: 11px">
+              <span style="font-size: 11pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: Calibri, sans-serif"
+                    ><span style="font-size: 14pt"
+                      ><span style="background: white"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 'Times New Roman', serif"
+                            >Таким образом, многосенсорное обучение,
+                            ориентированное на группу учащихся с определенными
+                            модальностными характеристиками, дает им возможность
+                            раскрыть свои способности и создает ситуацию успеха,
+                            что, в свою очередь, формирует устойчивую учебную
+                            мотивацию.</span
+                          ></span
+                        >
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </p>
+
+            <p>&nbsp;</p>
+
+            <p>
+              <span style="font-size: 16px"
+                >Мы хотим предложить вам видео-урок по созданию презентации в
+                Power-Point. С помощью навыков, которые вы получили просмотрев
+                данное видео, вам будет удобнее представлять информацию&nbsp;для
+                обучающихся данных типов.&nbsp;</span
+              >
+            </p>
+
+            <p>&nbsp;</p>
+            <style type="text/css">
+              #video12 {
+                position: relative;
+                margin-bottom: 110px;
+                padding-bottom: 75%;
+              }
+
+              #video12 iframe {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+              }
+
+              #video12 div {
+                position: absolute;
+                bottom: -110px;
+                width: 100%;
+                height: 100px;
+                padding: 0;
+                overflow-x: auto;
+                white-space: nowrap;
+                text-align: center;
+              }
+
+              #video12 img {
+                height: calc(100% - (5px + 1px) * 2 - 10px);
+                margin: 0 5px 0 0;
+                padding: 5px;
+                border: 1px solid #555;
+                border-radius: 5px;
+                opacity: 0.7;
+              }
+
+              #video12 img:hover {
+                opacity: 1;
+                cursor: pointer;
+              }
+
+              #video12 img:focus {
+                opacity: 0.2;
+              }
+            </style>
+            <div id="video12">
+              <iframe
+                allowfullscreen=""
+                frameborder="0"
+                src="https://www.youtube.com/embed/U6R6KheHyO0?rel=0"
+              ></iframe>
+            </div>
+
+            <hr />
+            <p>
+              <br />
+              <span style="font-size: 16px"
+                >Также вы можете скачать предоставленный нами файл с готовым
+                тестом (формат Excel) и провести тестирование у вас в классе.
+                Данный файл находится на&nbsp;главной&nbsp;странице&nbsp;</span
+              ><span style="font-size: 18px">-&gt;</span>
+              <span style="font-size: 16px"
+                >&nbsp;в разделе&nbsp;&quot;Тест на мышление&quot;.</span
+              >
+            </p>
+            <script>
+              var container = document.getElementById("nativeroll_video_cont");
+
+              if (container) {
+                var parent = container.parentElement;
+
+                if (parent) {
+                  const wrapper = document.createElement("div");
+                  wrapper.classList.add("js-teasers-wrapper");
+
+                  parent.insertBefore(wrapper, container.nextSibling);
+                }
+              }
+            </script>
+            <!-- </body> -->
+          </section>
+        </div>
+
+        <aside id="sidebar">
+          <!--U1CLEFTER1Z-->
+          <!-- <block8> -->
+
+          <div class="sidebox">
+            <div class="sidetitle">
+              <span
+                ><!-- <bt> --><!--<s5171>-->Календарь<!--</s>--><!-- </bt> --></span
+              >
+            </div>
+            <div class="inner">
+              <div align="center">
+                <!-- <bc> -->
+                <table
+                  border="0"
+                  cellspacing="1"
+                  cellpadding="2"
+                  class="calTable"
+                >
+                  <tr>
+                    <td align="center" class="calMonth" colspan="7">
+                      <a
+                        title="Март 2021"
+                        class="calMonthLink"
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="window.location.href=''+atob('L25ld3Mv')+'2021-03';return false;"
+                        >&laquo;</a
+                      >&nbsp;
+                      <a
+                        class="calMonthLink"
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="window.location.href=''+atob('L25ld3Mv')+'2021-04';return false;"
+                        >Апрель 2021</a
+                      >
+                      &nbsp;<a
+                        title="Май 2021"
+                        class="calMonthLink"
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="window.location.href=''+atob('L25ld3Mv')+'2021-05';return false;"
+                        >&raquo;</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calWday">Пн</td>
+                    <td align="center" class="calWday">Вт</td>
+                    <td align="center" class="calWday">Ср</td>
+                    <td align="center" class="calWday">Чт</td>
+                    <td align="center" class="calWday">Пт</td>
+                    <td align="center" class="calWdaySe">Сб</td>
+                    <td align="center" class="calWdaySu">Вс</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td align="center" class="calMday">1</td>
+                    <td align="center" class="calMday">2</td>
+                    <td align="center" class="calMday">3</td>
+                    <td align="center" class="calMday">4</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calMday">5</td>
+                    <td align="center" class="calMday">6</td>
+                    <td align="center" class="calMday">7</td>
+                    <td align="center" class="calMday">8</td>
+                    <td align="center" class="calMday">9</td>
+                    <td align="center" class="calMday">10</td>
+                    <td align="center" class="calMday">11</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calMday">12</td>
+                    <td align="center" class="calMday">13</td>
+                    <td align="center" class="calMday">14</td>
+                    <td align="center" class="calMday">15</td>
+                    <td align="center" class="calMday">16</td>
+                    <td align="center" class="calMday">17</td>
+                    <td align="center" class="calMday">18</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calMday">19</td>
+                    <td align="center" class="calMday">20</td>
+                    <td align="center" class="calMday">21</td>
+                    <td align="center" class="calMdayA">22</td>
+                    <td align="center" class="calMday">23</td>
+                    <td align="center" class="calMday">24</td>
+                    <td align="center" class="calMday">25</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calMday">26</td>
+                    <td align="center" class="calMday">27</td>
+                    <td align="center" class="calMday">28</td>
+                    <td align="center" class="calMday">29</td>
+                    <td align="center" class="calMday">30</td>
+                  </tr>
+                </table>
+                <!-- </bc> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- </block8> -->
+
+          <!-- <block10> -->
+
+          <div class="sidebox">
+            <div class="sidetitle">
+              <span
+                ><!-- <bt> --><!--<s5207>-->Наш опрос<!--</s>--><!-- </bt> --></span
+              >
+            </div>
+            <div class="inner">
+              <!-- <bc> -->
+              <script type="text/javascript">
+                function pollnow205() {
+                  document.getElementById("PlBtn205").disabled = true;
+                  _uPostForm("pollform205", {
+                    url: "/poll/",
+                    type: "POST",
+                  });
+                }
+
+                function polll205(id, i) {
+                  _uPostForm("", {
+                    url: "/poll/" + id + "-1-" + i + "-205",
+                    type: "GET",
+                  });
+                }
+              </script>
+              <div id="pollBlock205">
+                <form id="pollform205" onsubmit="pollnow205();return false;">
+                  <div class="pollBlock">
+                    <div class="pollQue"><b>Оцените тестирование</b></div>
+                    <div class="pollAns">
+                      <div class="answer">
+                        <input
+                          id="a2051"
+                          type="radio"
+                          name="answer"
+                          value="1"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a2051"
+                          >Отлично</label
+                        >
+                      </div>
+                      <div class="answer">
+                        <input
+                          id="a2052"
+                          type="radio"
+                          name="answer"
+                          value="2"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a2052"
+                          >Хорошо</label
+                        >
+                      </div>
+                      <div class="answer">
+                        <input
+                          id="a2053"
+                          type="radio"
+                          name="answer"
+                          value="3"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a2053"
+                          >Неплохо</label
+                        >
+                      </div>
+                      <div class="answer">
+                        <input
+                          id="a2054"
+                          type="radio"
+                          name="answer"
+                          value="4"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a2054"
+                          >Плохо</label
+                        >
+                      </div>
+                      <div class="answer">
+                        <input
+                          id="a2055"
+                          type="radio"
+                          name="answer"
+                          value="5"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a2055"
+                          >Ужасно</label
+                        >
+                      </div>
+                      <div id="pollSbm205" class="pollButton">
+                        <input
+                          class="pollBut"
+                          id="PlBtn205"
+                          type="submit"
+                          value="Оценить"
+                        />
+                      </div>
+                      <input
+                        type="hidden"
+                        name="ssid"
+                        value="503210777167737156617"
+                      />
+                      <input type="hidden" name="id" value="1" />
+                      <input type="hidden" name="a" value="1" />
+                      <input type="hidden" name="ajax" value="205" />
+                    </div>
+                    <div class="pollLnk">
+                      <a
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="new _uWnd('PollR','Результаты опроса',660,200,{closeonesc:1,maxh:400},{url:'/poll/1'});return false;"
+                        >Результаты</a
+                      >
+                      |
+                      <a
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="new _uWnd('PollA','Архив опросов',660,250,{closeonesc:1,maxh:400,max:1,min:1},{url:'/poll/0-2'});return false;"
+                        >Архив опросов</a
+                      >
+                    </div>
+                    <div class="pollTot">Всего ответов: <b>30</b></div>
+                  </div>
+                </form>
+              </div>
+              <!-- </bc> -->
+            </div>
+          </div>
+
+          <!-- </block10> -->
+
+          <!--/U1CLEFTER1Z-->
+        </aside>
+
+        <!-- </middle> -->
+      </div>
+    </div>
+    <!--U1BFOOTER1Z-->
+    <footer>
+      <div id="footer">
+        <div class="wrapper">
+          <div class="foot-l">
+            <!-- <copy> -->Copyright STUDHELP &copy; 2021
+            <!-- </copy> -->
+          </div>
+          <div class="foot-r">STUDHELP</div>
+        </div>
+      </div>
+    </footer>
+    <!--/U1BFOOTER1Z-->
+    <div class="owerflow-layer"></div>
+    <div class="mm-wrapper">
+      <div class="mobile-menu-container">
+        <i class="material-icons i_close">close</i>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="s/t/1726/ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  </body>
+</html>
+
+<!-- 0.1245210 (s22) -->

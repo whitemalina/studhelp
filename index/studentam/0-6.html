@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html id="root">
+  <head>
+    <title>StudHelp - Студентам</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Material+Icons|Russo+One&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="s/src/css/1726.css" />
+    <script type="text/javascript">
+      var navTitle = "StudHelp";
+    </script>
+
+    <link rel="stylesheet" href="s/src/base.min.css" />
+    <link rel="stylesheet" href="s/src/layer7.min.css?v=211814" />
+
+    <script src="s/src/jquery-1.12.4.min.js"></script>
+
+    <script src="s/src/uwnd.min.js?v=221200"></script>
+    <script type="text/javascript">
+      /* --- UCOZ-JS-INIT_CODE --- */
+      window.ulb = {
+        photoPage: "Перейти на страницу с фотографией.",
+        closeBtn: "Закрыть",
+        error:
+          "Запрошенный контент не может быть загружен. Пожалуйста, попробуйте позже.",
+        next: "Следующий",
+        prev: "Предыдущий",
+        btnPlay: "Начать слайдшоу",
+        btnToggle: "Изменить размер",
+      };
+      window.bottomInfoData = [
+        {
+          button: "Согласиться",
+          id: "cookiePolicy",
+          message:
+            "Этот сайт использует файлы cookies для более комфортной работы пользователя. Продолжая просмотр страниц сайта, вы соглашаетесь с <a href=/index/cookiepolicy target=_blank >Политикой использования файлов cookies</a>.",
+          cookieKey: "cPolOk",
+        },
+      ];
+      /* --- UCOZ-JS-END --- */
+    </script>
+
+    <link rel="stylesheet" href="s/src/ulightbox/ulightbox.min.css" />
+    <script src="s/src/ulightbox/ulightbox.min.js"></script>
+    <script src="s/src/bottomInfo.min.js"></script>
+    <style type="text/css">
+      .UhideBlock {
+        display: none;
+      }
+    </style>
+    <script type="text/javascript">
+      //<!--
+      function uSocialLogin(t) {
+        var params = {
+          vkontakte: {
+            width: 790,
+            height: 400,
+          },
+          facebook: {
+            width: 950,
+            height: 520,
+          },
+          yandex: {
+            width: 870,
+            height: 515,
+          },
+          google: {
+            width: 700,
+            height: 600,
+          },
+          ok: {
+            width: 710,
+            height: 390,
+          },
+        };
+        var ref = escape(
+          location.protocol +
+            "//" +
+            ("testiasdd.ucoz.net" || location.hostname) +
+            location.pathname +
+            (location.hash
+              ? (location.search ? location.search + "&" : "?") +
+                "rnd=" +
+                Date.now() +
+                location.hash
+              : location.search || "")
+        );
+        // var ref = escape(location.href);
+        window.open(
+          "/" + t + "?ref=" + ref,
+          "conwin",
+          "width=" +
+            params[t].width +
+            ",height=" +
+            params[t].height +
+            ",status=1,resizable=1,left=" +
+            parseInt(screen.availWidth / 2 - params[t].width / 2) +
+            ",top=" +
+            parseInt(screen.availHeight / 2 - params[t].height / 2 - 20) +
+            "screenX=" +
+            parseInt(screen.availWidth / 2 - params[t].width / 2) +
+            ",screenY=" +
+            parseInt(screen.availHeight / 2 - params[t].height / 2 - 20)
+        );
+        return false;
+      }
+      //-->
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="s/src/social.css" />
+  </head>
+
+  <body class="tmpl_body">
+    <!--U1AHEADER1Z-->
+    <header>
+      <div class="wrapper">
+        <div id="header">
+          <div class="head-t">
+            <div class="head-l">
+              <div id="site-logo">
+                <span class="site-l">
+                  <div class="nav-head">
+                    <div class="material-icons i_menu">menu</div>
+                  </div>
+                  <span class="site-n">
+                    <a href="/">
+                      <span class="logo-n"></span>
+                      <!-- <logo> -->StudHelp
+                      <!-- </logo> -->
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="head-r">
+              <div id="sch-box">
+                <div class="header-search-box">
+                  <div class="searchForm">
+                    <form
+                      onsubmit="this.sfSbm.disabled=true"
+                      method="get"
+                      style="margin: 0"
+                      action="/search/"
+                    >
+                      <div align="center" class="schQuery">
+                        <input
+                          type="text"
+                          name="q"
+                          maxlength="30"
+                          size="20"
+                          class="queryField"
+                        />
+                      </div>
+                      <div align="center" class="schBtn">
+                        <input
+                          type="submit"
+                          class="searchSbmFl"
+                          name="sfSbm"
+                          value="Найти"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <div id="catmenu">
+              <!-- <sblock_nmenu> -->
+
+              <!-- <bc> -->
+              <div id="uNMenuDiv1" class="uMenuV">
+                <ul class="uMenuRoot">
+                  <li>
+                    <a href="/"><span>Главная страница</span></a>
+                  </li>
+                  <li>
+                    <a href="/index/prepodovateljam/0-5.html"
+                      ><span>Преподавателям</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="uMenuItemA" href="/index/studentam/0-6.html"
+                      ><span>Студентам</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/index/test/0-4.html"
+                      ><span>Тест на мышление</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--/U1AHEADER1Z-->
+    <div class="wrapper main_wrapper">
+      <div id="casing" class="module_index">
+        <!-- <middle> -->
+        <div id="content">
+          <section>
+            <!-- <body> -->
+            <div id="nativeroll_video_cont" style="display: none"></div>
+            <p>
+              <span style="font-size: 14px"
+                >Новый учебный год, новый дополнительный кружок &ndash; это
+                новые трудности и дополнительная нагрузка. Мы &ndash; студенты
+                первого курса, не понаслышке знаем какого это, начинать учиться
+                с большим энтузиазмом, а спустя месяц у многих
+                опускаются&nbsp;руки.&nbsp; Многие проходили через это, в том
+                числе и мы. Нам&nbsp;стало интересно,&nbsp;почему великие люди
+                были успешны в своих начинаниях и при этом оставались в здравом
+                уме. В течение года мы изучали эту тему и пришли к трём факторам
+                продуктивной работы:</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                ><em
+                  >1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Правильное оформления
+                  письменных работ</em
+                ></span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                ><em
+                  >2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Секрет распределения
+                  времени</em
+                ></span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                ><em
+                  >3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Здоровье &ndash; один из
+                  важных аспектов жизни</em
+                ></span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >Этими навыками я хотела бы поделиться с будущими студентами 1
+                курса. Также эта информация может пригодиться для учеников школ,
+                например, в подготовке к экзаменам или просто для успешного
+                обучения.</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >Команда <strong>STUDHELP</strong> провела тестирование
+                &quot;Диагностика доминирующей перцептивной модальности С.
+                Ефремцева&quot;&nbsp;и были получены следующие
+                результаты:&nbsp;</span
+              >
+            </p>
+
+            <p style="margin-left: 120px">
+              <span style="font-size: 14px"
+                >52%&nbsp;детей имеют&nbsp;<span style="color: #ff0000"
+                  ><u>визуальный</u></span
+                >&nbsp;тип восприятия информации&nbsp;</span
+              >
+            </p>
+
+            <p style="margin-left: 120px">
+              <span style="font-size: 14px"
+                >23%&nbsp;детей имеют&nbsp;<span style="color: #008000"
+                  ><u>аудиальный</u></span
+                >&nbsp;тип восприятия информации</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >(Тестирование проходили студенты 1 курса Сургутского
+                политехнического колледжа).</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >На основе данных результатов мы подобрали материалы, которые
+                могут помочь студентам данных типов улучшить свой учебный
+                процесс.</span
+              >
+            </p>
+
+            <hr />
+            <p>
+              <span style="font-size: 14px"
+                >Вы можете определить свой тип и получить более подробную
+                информацию по данной теме, перейдя на главную страницу -&gt;
+                раздел &laquo;Тест на мышление&raquo;.</span
+              >
+            </p>
+
+            <hr />
+            <p><span style="font-size: 14px">И таак.. Приступим!</span></p>
+
+            <p style="text-align: center">
+              <span style="font-size: 16px"
+                ><em>1. Правильное оформление работ</em></span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >По результатам тестирования мы выяснили, что лидируют
+                кинестетики и визуалы. Для таких людей удобнее всего работать с
+                информацией &laquo;руками&raquo; и &laquo;глазами&raquo;. Мы
+                хотим предложить варианты оформления конспектов и научить
+                правильно структурировать полученную информацию.</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >Для начала предлагаем вам обозначить разные цвета маркеров для
+                каждого предмета. Или, к примеру определения и правила выделять
+                красным, а важные моменты и примеры желтым. Так же вы можете
+                приобрести цветные ручки, главное соблюдать цветовые
+                обозначения, так будет легче найти нужную
+                информацию.&nbsp;</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                ><img alt="" border="0" src="3ch/1.jpg" />&nbsp;</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >Теперь определимся с заголовками. Вы можете выделять заголовки
+                самыми разными способами. Вам будет лучше видно объем информации
+                от начала и до конца. Выделяйте каждый новый раздел, тему и
+                параграф разными видами заголовков. Здесь так же очень удобно
+                использовать разные цвета маркеров и ручек.&nbsp;</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                ><img alt="" border="0" src="3ch/2.jpg" />&nbsp;</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                ><img alt="" border="0" src="3ch/3.jpg"
+              /></span>
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                ><img alt="" border="0" src="4.jpg"
+              /></span>
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                ><img alt="" border="0" src="3ch/5.jpg"
+              /></span>
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >Очень важно не стараться сэкономить как можно больше места, а
+                писать конспекты и работы понятными для себя. Ведь имея огромный
+                параграф, вы сможете выучить его, сделав понятный для ВАС
+                конспект.<br />
+                Посмотрите, здесь текст не написан до конца строчки (
+                &laquo;лишь бы на страничку влезло&raquo; ), каждый абзац
+                выделен, каждая мысль начинается с новой строки, хорошо выделен
+                заголовок и подзаголовки. Почерк понятный, хорошо
+                читабельный.&nbsp;</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                ><img alt="" border="0" src="3ch/6.jpg"
+              /></span>
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >Далее очень удобно в работе использовать &laquo;стикеры&raquo;
+                и всевозможные &laquo;наклейки&raquo;. Так вы сможете оживить
+                свой конспект и сделать его &laquo;интерактивным&raquo;. Вы
+                сконцентрируете свое внимание на важном определении или правиле
+                и в нужный момент, этот акцент откликнется в вашей памяти. К
+                тому же определения, формулы вы можете выделять в
+                &quot;рамочки&quot;&nbsp;используя, как пример, образцы
+                на&nbsp;картинках&nbsp;выше - &quot;для
+                заголовков&quot;&nbsp;</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                ><img alt="" border="0" src="3ch/7.jpg"
+              /></span>
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >Если вам необходимо сделать конспект, а в параграфе как на зло
+                нет никаких картинок, схем и дан один сплошной текст, не
+                переживайте, не нужно списывать просто все подряд, тут тоже
+                найдется верное решение.<br />
+                Вы открываете параграф, старинным методом
+                выделяете&nbsp;&quot;самое главное&raquo;, затем в понятном виде
+                пишете это. Здесь главное не смешивать информацию, чтобы среди
+                вашего текста можно было найти нужное. Ваша задача &ndash;
+                сделать ОГРОМНЫЙ параграф приятным и удобным для вашего
+                использования. Поверьте, учеба станет легче, а материал
+                понятнее. Преподаватели очень ценят, когда работы выполнены
+                аккуратно
+                <img
+                  align="absmiddle"
+                  alt="smile"
+                  border="0"
+                  src="s/sm/1/smile.gif"
+                />&nbsp; &nbsp;</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                ><img alt="" border="0" src="3ch/8.jpg"
+              /></span>
+            </p>
+
+            <p>&nbsp;</p>
+
+            <p style="text-align: center">
+              <em
+                ><span style="font-size: 16px"
+                  >2. Составь список важных дел</span
+                ><span style="font-size: 14px">. </span></em
+              >
+            </p>
+
+            <ul>
+              <li>
+                <u
+                  ><span style="font-size: 14px"
+                    >Составь список важных дел</span
+                  ></u
+                ><br />
+                <span style="font-size: 14px"
+                  >Чтобы ничего не упустить и успеть сделать все дела в срок
+                  можно <u>составить список дел</u>. Вроде бы простая система,
+                  но, Во-первых, видя этот список ты держишь свой мозг в тонусе,
+                  как будто не даешь ему расслабиться, до тех пор, пока у тебя
+                  есть список с целями. Во-вторых, визуализируя задачи, ты
+                  повышаешь вероятность их выполнения, потому что эти задачи уже
+                  не просто у нас в голове, а записаны на бумаге</span
+                >
+              </li>
+            </ul>
+
+            <p><img alt="" border="0" src="3ch/9.jpg" /></p>
+
+            <p>
+              <span style="font-size: 14px"
+                ><img alt="" border="0" src="3ch/10.jpg"
+              /></span>
+            </p>
+
+            <p style="margin-left: 40px">
+              <br />
+              <span style="font-size: 14px"
+                >Конечно, мы все имеем ограниченные запасы энергии и времени и
+                составляя будет ошибкой написать 100 дел на день и просто
+                утонуть в них&hellip; Но и для этой проблемы есть решение.</span
+              >
+            </p>
+
+            <p style="margin-left: 40px">&nbsp;</p>
+
+            <ul>
+              <li>
+                <span style="font-size: 14px"><u>Методика 1-3-5</u></span>
+
+                <p>
+                  <span style="font-size: 14px"
+                    >Эта методика помогает избавиться от огромного списка дел.
+                    Каждый день планируем себе по 9 самых важных дел. Затем
+                    делим их на группы.</span
+                  >
+                </p>
+
+                <p>
+                  <span style="font-size: 14px"
+                    ><span style="color: #ff0000">1 задача</span> &ndash; самая
+                    важная задача, которая всегда будет в приоритете. Это цель
+                    нашего дня.</span
+                  >
+                </p>
+
+                <p>
+                  <span style="font-size: 14px"
+                    ><span style="color: #800080">3 задачи</span> &ndash; дела,
+                    которые требуют решения в течении рабочего дня.</span
+                  >
+                </p>
+
+                <p>
+                  <span style="font-size: 14px"
+                    ><span style="color: #008000">5 задач</span> &ndash; мелкие
+                    позиции, которые выполняются по возможности. Их можно
+                    перенести на другой день, в случае чего.</span
+                  >
+                </p>
+
+                <p>
+                  <span style="font-size: 14px"
+                    ><strong><u>Всего 9 дел</u></strong
+                    >. Главное, чётко соблюдать количество, иначе метом будет
+                    неэффективным.</span
+                  >
+                </p>
+
+                <p>
+                  <span style="font-size: 14px"
+                    >Так же эта техника хорошо работает в комбинации с техникой
+                    &laquo;установка временных границ&raquo;.</span
+                  ><br />
+                  &nbsp;
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span style="font-size: 14px"
+                    ><u>Установка временных границ</u><br />
+                    На каждое дело нужно определить свои границы времени. На
+                    пример:<br />
+                    делать математику, русский и историю (3 часа)<br />
+                    прочитать 3 главы по литературе (1 час)</span
+                  ><br />
+                  <span style="font-size: 14px"
+                    >помыть посуду (15 минут)<br />
+                    собрать портфель и спортивную сумку на следующий день (10
+                    минут).</span
+                  ><br />
+                  &nbsp;
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span style="font-size: 14px"
+                    ><u>Составление расписания</u><br />
+                    Очень важной частью правильного распределения времени
+                    является составление расписания. Если ты четко знаешь, где и
+                    во сколько тебе надо быть, когда и чем ты должен заняться, у
+                    тебя не случится казусов и неприятных ситуаций. Ты
+                    перестанешь опаздывать и не будешь забывать выполнять то или
+                    иное дело. Важно создать свое собственное расписание, куда
+                    будут вписаны тренировки, уроки, дополнительные консультации
+                    (не забываем включить туда отдых и время на личные дела). </span
+                  ><br />
+                  <span style="font-size: 14px"
+                    >Для тех, кто не любит рисовать, можно скачать скелет и
+                    заполнить его</span
+                  >
+                </p>
+              </li>
+            </ul>
+
+            <p>
+              <span style="font-family: Arial, Helvetica, sans-serif"
+                ><span style="font-size: 24px"
+                  ><a class="info-btn" href="3ch/kalendar.pub"
+                    >Скачать календарь</a
+                  ></span
+                ></span
+              >
+            </p>
+
+            <p>
+              <span style="font-family: Arial, Helvetica, sans-serif"
+                ><span style="font-size: 24px"
+                  ><a class="info-btn" href="3ch/maket_chasov.docx"
+                    >Скачать расписание</a
+                  ></span
+                ></span
+              >
+            </p>
+
+            <p style="text-align: center">
+              <span style="font-size: 16px"
+                ><em
+                  >3. Здоровье &ndash; один из важных аспектов жизни</em
+                ></span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >Учеба &ndash; тяжелый труд. Мы очень истощаем свой организм в
+                погоне за хорошими отметками. Главное не забывать, что организму
+                нужно восстановление. Самая частая ошибка учащихся &ndash;
+                нехватка сна. Студенты и ученики спят меньше положенной
+                нормы.</span
+              >
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >Нормой сна ребенка 14-18 лет является 9-11 часов, с 18-24 лет
+                нормой считается 8-10 часов</span
+              ><br />
+              <br />
+              <img alt="" border="0" src="3ch/11.png" />
+            </p>
+
+            <p>
+              <span style="font-size: 14px"
+                >Периодически нужно позволять себе какие-то радости
+                <img
+                  align="absmiddle"
+                  alt="smile"
+                  border="0"
+                  src="s/sm/1/smile.gif"
+                /><br />
+                Для кого-то это поход в кино, для кого-то вечер с красками в
+                руках, одному нужна порция любимых конфет, а другому будет
+                лучше, если он проведет время за компьютером в любимой игре.<br />
+                Главное помнить, что нужно знать во всём меру. Время от времени
+                выключай компьютер, занимайся другими интересными делами. Так же
+                спорт и медитация хорошо помогают снять стресс и напряжение.
+                Нужно обращать внимание на сигналы организма. Переутомление
+                плохо сказывается на продуктивности работы.<br />
+                Чтобы оставаться в моральном и физическом равновесии со своим
+                организмом, нужно обязательно хорошо спать и давать себе время
+                на восстановление. Это очень важно!
+              </span>
+            </p>
+            <!-- </body> -->
+          </section>
+        </div>
+
+        <aside id="sidebar">
+          <!--U1CLEFTER1Z-->
+          <!-- <block8> -->
+
+          <div class="sidebox">
+            <div class="sidetitle">
+              <span
+                ><!-- <bt> --><!--<s5171>-->Календарь<!--</s>--><!-- </bt> --></span
+              >
+            </div>
+            <div class="inner">
+              <div align="center">
+                <!-- <bc> -->
+                <table
+                  border="0"
+                  cellspacing="1"
+                  cellpadding="2"
+                  class="calTable"
+                >
+                  <tr>
+                    <td align="center" class="calMonth" colspan="7">
+                      <a
+                        title="Март 2021"
+                        class="calMonthLink"
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="window.location.href=''+atob('L25ld3Mv')+'2021-03';return false;"
+                        >&laquo;</a
+                      >&nbsp;
+                      <a
+                        class="calMonthLink"
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="window.location.href=''+atob('L25ld3Mv')+'2021-04';return false;"
+                        >Апрель 2021</a
+                      >
+                      &nbsp;<a
+                        title="Май 2021"
+                        class="calMonthLink"
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="window.location.href=''+atob('L25ld3Mv')+'2021-05';return false;"
+                        >&raquo;</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calWday">Пн</td>
+                    <td align="center" class="calWday">Вт</td>
+                    <td align="center" class="calWday">Ср</td>
+                    <td align="center" class="calWday">Чт</td>
+                    <td align="center" class="calWday">Пт</td>
+                    <td align="center" class="calWdaySe">Сб</td>
+                    <td align="center" class="calWdaySu">Вс</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td align="center" class="calMday">1</td>
+                    <td align="center" class="calMday">2</td>
+                    <td align="center" class="calMday">3</td>
+                    <td align="center" class="calMday">4</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calMday">5</td>
+                    <td align="center" class="calMday">6</td>
+                    <td align="center" class="calMday">7</td>
+                    <td align="center" class="calMday">8</td>
+                    <td align="center" class="calMday">9</td>
+                    <td align="center" class="calMday">10</td>
+                    <td align="center" class="calMday">11</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calMday">12</td>
+                    <td align="center" class="calMday">13</td>
+                    <td align="center" class="calMday">14</td>
+                    <td align="center" class="calMday">15</td>
+                    <td align="center" class="calMday">16</td>
+                    <td align="center" class="calMday">17</td>
+                    <td align="center" class="calMday">18</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calMday">19</td>
+                    <td align="center" class="calMday">20</td>
+                    <td align="center" class="calMday">21</td>
+                    <td align="center" class="calMdayA">22</td>
+                    <td align="center" class="calMday">23</td>
+                    <td align="center" class="calMday">24</td>
+                    <td align="center" class="calMday">25</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calMday">26</td>
+                    <td align="center" class="calMday">27</td>
+                    <td align="center" class="calMday">28</td>
+                    <td align="center" class="calMday">29</td>
+                    <td align="center" class="calMday">30</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- </block8> -->
+
+          <!-- <block10> -->
+
+          <div class="sidebox">
+            <div class="sidetitle">
+              <span
+                ><!-- <bt> --><!--<s5207>-->Наш опрос<!--</s>--><!-- </bt> --></span
+              >
+            </div>
+            <div class="inner">
+              <!-- <bc> -->
+              <script type="text/javascript">
+                function pollnow121() {
+                  document.getElementById("PlBtn121").disabled = true;
+                  _uPostForm("pollform121", {
+                    url: "/poll/",
+                    type: "POST",
+                  });
+                }
+
+                function polll121(id, i) {
+                  _uPostForm("", {
+                    url: "/poll/" + id + "-1-" + i + "-121",
+                    type: "GET",
+                  });
+                }
+              </script>
+              <div id="pollBlock121">
+                <form id="pollform121" onsubmit="pollnow121();return false;">
+                  <div class="pollBlock">
+                    <div class="pollQue"><b>Оцените тестирование</b></div>
+                    <div class="pollAns">
+                      <div class="answer">
+                        <input
+                          id="a1211"
+                          type="radio"
+                          name="answer"
+                          value="1"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a1211"
+                          >Отлично</label
+                        >
+                      </div>
+                      <div class="answer">
+                        <input
+                          id="a1212"
+                          type="radio"
+                          name="answer"
+                          value="2"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a1212"
+                          >Хорошо</label
+                        >
+                      </div>
+                      <div class="answer">
+                        <input
+                          id="a1213"
+                          type="radio"
+                          name="answer"
+                          value="3"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a1213"
+                          >Неплохо</label
+                        >
+                      </div>
+                      <div class="answer">
+                        <input
+                          id="a1214"
+                          type="radio"
+                          name="answer"
+                          value="4"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a1214"
+                          >Плохо</label
+                        >
+                      </div>
+                      <div class="answer">
+                        <input
+                          id="a1215"
+                          type="radio"
+                          name="answer"
+                          value="5"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a1215"
+                          >Ужасно</label
+                        >
+                      </div>
+                      <div id="pollSbm121" class="pollButton">
+                        <input
+                          class="pollBut"
+                          id="PlBtn121"
+                          type="submit"
+                          value="Оценить"
+                        />
+                      </div>
+                      <input
+                        type="hidden"
+                        name="ssid"
+                        value="611643360121000520560"
+                      />
+                      <input type="hidden" name="id" value="1" />
+                      <input type="hidden" name="a" value="1" />
+                      <input type="hidden" name="ajax" value="121" />
+                    </div>
+                    <div class="pollLnk">
+                      <a
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="new _uWnd('PollR','Результаты опроса',660,200,{closeonesc:1,maxh:400},{url:'/poll/1'});return false;"
+                        >Результаты</a
+                      >
+                      |
+                      <a
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="new _uWnd('PollA','Архив опросов',660,250,{closeonesc:1,maxh:400,max:1,min:1},{url:'/poll/0-2'});return false;"
+                        >Архив опросов</a
+                      >
+                    </div>
+                    <div class="pollTot">Всего ответов: <b>30</b></div>
+                  </div>
+                </form>
+              </div>
+              <!-- </bc> -->
+            </div>
+          </div>
+
+          <!-- </block10> -->
+
+          <!--/U1CLEFTER1Z-->
+        </aside>
+
+        <!-- </middle> -->
+      </div>
+    </div>
+    <!--U1BFOOTER1Z-->
+    <footer>
+      <div id="footer">
+        <div class="wrapper">
+          <div class="foot-l">
+            <!-- <copy> -->Copyright STUDHELP &copy; 2021
+            <!-- </copy> -->
+          </div>
+          <div class="foot-r">STUDHELP</div>
+        </div>
+      </div>
+    </footer>
+    <div class="owerflow-layer"></div>
+    <div class="mm-wrapper">
+      <div class="mobile-menu-container">
+        <i class="material-icons i_close">close</i>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="s/t/1726/ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  </body>
+</html>

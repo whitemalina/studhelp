@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html id="root">
+  <head>
+    <title>StudHelp - Главная страница</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Material+Icons|Russo+One&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="../s/src/css/1726.css" />
+    <script type="text/javascript">
+      var navTitle = "StudHelp";
+    </script>
+
+    <link rel="stylesheet" href="../s/src/base.min.css" />
+    <link rel="stylesheet" href="../s/src/layer7.min.css?v=211814" />
+
+    <script src="../s/src/jquery-1.12.4.min.js"></script>
+
+    <script src="../s/src/uwnd.min.js?v=221200"></script>
+    <script type="text/javascript">
+      /* --- UCOZ-JS-INIT_CODE --- */
+      window.ulb = {
+        photoPage: "Перейти на страницу с фотографией.",
+        closeBtn: "Закрыть",
+        error:
+          "Запрошенный контент не может быть загружен. Пожалуйста, попробуйте позже.",
+        next: "Следующий",
+        prev: "Предыдущий",
+        btnPlay: "Начать слайдшоу",
+        btnToggle: "Изменить размер",
+      };
+      window.bottomInfoData = [
+        {
+          button: "Согласиться",
+          id: "cookiePolicy",
+          message:
+            "Этот сайт использует файлы cookies для более комфортной работы пользователя. Продолжая просмотр страниц сайта, вы соглашаетесь с <a href=/index/cookiepolicy target=_blank >Политикой использования файлов cookies</a>.",
+          cookieKey: "cPolOk",
+        },
+      ];
+      /* --- UCOZ-JS-END --- */
+    </script>
+
+    <link rel="stylesheet" href="../s/src/ulightbox/ulightbox.min.css" />
+    <script src="../s/src/ulightbox/ulightbox.min.js"></script>
+    <script src="../s/src/bottomInfo.min.js"></script>
+
+    <style type="text/css">
+      .UhideBlock {
+        display: none;
+      }
+    </style>
+    <script type="text/javascript">
+      //<!--
+      function uSocialLogin(t) {
+        var params = {
+          vkontakte: {
+            width: 790,
+            height: 400,
+          },
+          facebook: {
+            width: 950,
+            height: 520,
+          },
+          yandex: {
+            width: 870,
+            height: 515,
+          },
+          google: {
+            width: 700,
+            height: 600,
+          },
+          ok: {
+            width: 710,
+            height: 390,
+          },
+        };
+        var ref = escape(
+          location.protocol +
+            "//" +
+            ("testiasdd.ucoz.net" || location.hostname) +
+            location.pathname +
+            (location.hash
+              ? (location.search ? location.search + "&" : "?") +
+                "rnd=" +
+                Date.now() +
+                location.hash
+              : location.search || "")
+        );
+        // var ref = escape(location.href);
+        window.open(
+          "/" + t + "?ref=" + ref,
+          "conwin",
+          "width=" +
+            params[t].width +
+            ",height=" +
+            params[t].height +
+            ",status=1,resizable=1,left=" +
+            parseInt(screen.availWidth / 2 - params[t].width / 2) +
+            ",top=" +
+            parseInt(screen.availHeight / 2 - params[t].height / 2 - 20) +
+            "screenX=" +
+            parseInt(screen.availWidth / 2 - params[t].width / 2) +
+            ",screenY=" +
+            parseInt(screen.availHeight / 2 - params[t].height / 2 - 20)
+        );
+        return false;
+      }
+      //-->
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="../s/src/social.css" />
+  </head>
+
+  <body class="tmpl_body">
+    <!--U1AHEADER1Z-->
+    <header>
+      <div class="wrapper">
+        <div id="header">
+          <div class="head-t">
+            <div class="head-l">
+              <div id="site-logo">
+                <span class="site-l">
+                  <div class="nav-head">
+                    <div class="material-icons i_menu">menu</div>
+                  </div>
+                  <span class="site-n">
+                    <a href="/">
+                      <span class="logo-n"></span>
+                      <!-- <logo> -->StudHelp
+                      <!-- </logo> -->
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="head-r">
+              <div id="sch-box">
+                <div class="header-search-box">
+                  <div class="searchForm">
+                    <form
+                      onsubmit="this.sfSbm.disabled=true"
+                      method="get"
+                      style="margin: 0"
+                      action="/search/"
+                    >
+                      <div align="center" class="schQuery">
+                        <input
+                          type="text"
+                          name="q"
+                          maxlength="30"
+                          size="20"
+                          class="queryField"
+                        />
+                      </div>
+                      <div align="center" class="schBtn">
+                        <input
+                          type="submit"
+                          class="searchSbmFl"
+                          name="sfSbm"
+                          value="Найти"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <div id="catmenu">
+              <!-- <sblock_nmenu> -->
+
+              <!-- <bc> -->
+              <div id="uNMenuDiv1" class="uMenuV">
+                <ul class="uMenuRoot">
+                  <li>
+                    <a class="uMenuItemA" href="/"
+                      ><span>Главная страница</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/index/prepodovateljam/0-5.html"
+                      ><span>Преподавателям</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/index/studentam/0-6.html"
+                      ><span>Студентам</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="/index/test/0-4.html"
+                      ><span>Тест на мышление</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- </bc> -->
+
+              <!-- </sblock_nmenu> -->
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--/U1AHEADER1Z-->
+    <div class="wrapper main_wrapper">
+      <section class="slider-wrapper">
+        <div id="slider">
+          <ul class="slides">
+            <li class="slide">
+              <img src="/FON/26.jpg" alt="" />
+              <div class="caption">
+                <div class="cap-ttl">Преподавателям</div>
+                <div class="cap-ds description">
+                  Мы предлагаем вам бесплатный видео-урок по созданию
+                  интерактивных презентаций
+                </div>
+                <div class="cap-ds">
+                  <a role="button" href="/index/prepodovateljam/0-5.html"
+                    >Перейти</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="slide">
+              <img src="/FON/3.jpg" alt="" />
+              <div class="caption">
+                <div class="cap-ttl">Студентам</div>
+                <div class="cap-ds description">
+                  Хочешь сделать свой учебный процесс лучше?)) Вот несколько
+                  полезных советов для улучшения учебного процесса!
+                </div>
+                <div class="cap-ds">
+                  <a role="button" href="/index/studentam/0-6.html">Перейти</a>
+                </div>
+              </div>
+            </li>
+            <li class="slide">
+              <img src=" FON/10.jpg" alt="" />
+              <div class="caption">
+                <div class="cap-ttl">Тест на мышление</div>
+                <div class="cap-ds description">
+                  А вы знали, что можно увеличить КАЧЕСТВО и СКОРОСТЬ обучения?
+                  Давайте определим ваш тип..
+                </div>
+                <div class="cap-ds">
+                  <a role="button" href="/index/test/0-4.html">Перейти</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="custom-navigation">
+            <i class="material-icons flex-prev">keyboard_arrow_left</i>
+            <i class="material-icons flex-next">keyboard_arrow_right</i>
+          </div>
+        </div>
+        <script
+          type="text/javascript"
+          src="../s/t/1726/jquery.flexslider-min.js"
+        ></script>
+        <script>
+          $(function () {
+            $("#slider").flexslider({
+              animation: "slide",
+              slideshowSpeed: 6000,
+              controlsContainer: "",
+              customDirectionNav: $(".custom-navigation i"),
+            });
+          });
+        </script>
+      </section>
+      <!--/U1PROMO1Z-->
+      <div id="casing" class="module_index">
+        <!-- <middle> -->
+        <div id="content">
+          <section>
+            <!-- <body> -->
+            <div id="nativeroll_video_cont" style="display: none"></div>
+            <div class="breadcrumbs-wrapper"></div>
+          </section>
+        </div>
+
+        <aside id="sidebar">
+          <!--U1CLEFTER1Z-->
+          <!-- <block8> -->
+
+          <div class="sidebox">
+            <div class="sidetitle">
+              <span
+                ><!-- <bt> --><!--<s5171>-->Календарь<!--</s>--><!-- </bt> --></span
+              >
+            </div>
+            <div class="inner">
+              <div align="center">
+                <!-- <bc> -->
+                <table
+                  border="0"
+                  cellspacing="1"
+                  cellpadding="2"
+                  class="calTable"
+                >
+                  <tr>
+                    <td align="center" class="calMonth" colspan="7">
+                      <a
+                        title="Март 2021"
+                        class="calMonthLink"
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="window.location.href=''+atob('L25ld3Mv')+'2021-03';return false;"
+                        >&laquo;</a
+                      >&nbsp;
+                      <a
+                        class="calMonthLink"
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="window.location.href=''+atob('L25ld3Mv')+'2021-04';return false;"
+                        >Апрель 2021</a
+                      >
+                      &nbsp;<a
+                        title="Май 2021"
+                        class="calMonthLink"
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="window.location.href=''+atob('L25ld3Mv')+'2021-05';return false;"
+                        >&raquo;</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calWday">Пн</td>
+                    <td align="center" class="calWday">Вт</td>
+                    <td align="center" class="calWday">Ср</td>
+                    <td align="center" class="calWday">Чт</td>
+                    <td align="center" class="calWday">Пт</td>
+                    <td align="center" class="calWdaySe">Сб</td>
+                    <td align="center" class="calWdaySu">Вс</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td align="center" class="calMday">1</td>
+                    <td align="center" class="calMday">2</td>
+                    <td align="center" class="calMday">3</td>
+                    <td align="center" class="calMday">4</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calMday">5</td>
+                    <td align="center" class="calMday">6</td>
+                    <td align="center" class="calMday">7</td>
+                    <td align="center" class="calMday">8</td>
+                    <td align="center" class="calMday">9</td>
+                    <td align="center" class="calMday">10</td>
+                    <td align="center" class="calMday">11</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calMday">12</td>
+                    <td align="center" class="calMday">13</td>
+                    <td align="center" class="calMday">14</td>
+                    <td align="center" class="calMday">15</td>
+                    <td align="center" class="calMday">16</td>
+                    <td align="center" class="calMday">17</td>
+                    <td align="center" class="calMday">18</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calMday">19</td>
+                    <td align="center" class="calMday">20</td>
+                    <td align="center" class="calMday">21</td>
+                    <td align="center" class="calMdayA">22</td>
+                    <td align="center" class="calMday">23</td>
+                    <td align="center" class="calMday">24</td>
+                    <td align="center" class="calMday">25</td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="calMday">26</td>
+                    <td align="center" class="calMday">27</td>
+                    <td align="center" class="calMday">28</td>
+                    <td align="center" class="calMday">29</td>
+                    <td align="center" class="calMday">30</td>
+                  </tr>
+                </table>
+                <!-- </bc> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- </block8> -->
+
+          <!-- <block10> -->
+
+          <div class="sidebox">
+            <div class="sidetitle">
+              <span
+                ><!-- <bt> --><!--<s5207>-->Наш опрос<!--</s>--><!-- </bt> --></span
+              >
+            </div>
+            <div class="inner">
+              <!-- <bc> -->
+              <script type="text/javascript">
+                function pollnow138() {
+                  document.getElementById("PlBtn138").disabled = true;
+                  _uPostForm("pollform138", {
+                    url: "/poll/",
+                    type: "POST",
+                  });
+                }
+
+                function polll138(id, i) {
+                  _uPostForm("", {
+                    url: "/poll/" + id + "-1-" + i + "-138",
+                    type: "GET",
+                  });
+                }
+              </script>
+              <div id="pollBlock138">
+                <form id="pollform138" onsubmit="pollnow138();return false;">
+                  <div class="pollBlock">
+                    <div class="pollQue"><b>Оцените тестирование</b></div>
+                    <div class="pollAns">
+                      <div class="answer">
+                        <input
+                          id="a1381"
+                          type="radio"
+                          name="answer"
+                          value="1"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a1381"
+                          >Отлично</label
+                        >
+                      </div>
+                      <div class="answer">
+                        <input
+                          id="a1382"
+                          type="radio"
+                          name="answer"
+                          value="2"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a1382"
+                          >Хорошо</label
+                        >
+                      </div>
+                      <div class="answer">
+                        <input
+                          id="a1383"
+                          type="radio"
+                          name="answer"
+                          value="3"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a1383"
+                          >Неплохо</label
+                        >
+                      </div>
+                      <div class="answer">
+                        <input
+                          id="a1384"
+                          type="radio"
+                          name="answer"
+                          value="4"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a1384"
+                          >Плохо</label
+                        >
+                      </div>
+                      <div class="answer">
+                        <input
+                          id="a1385"
+                          type="radio"
+                          name="answer"
+                          value="5"
+                          style="vertical-align: middle"
+                        />
+                        <label
+                          style="vertical-align: middle; display: inline"
+                          for="a1385"
+                          >Ужасно</label
+                        >
+                      </div>
+                      <div id="pollSbm138" class="pollButton">
+                        <input
+                          class="pollBut"
+                          id="PlBtn138"
+                          type="submit"
+                          value="Оценить"
+                        />
+                      </div>
+                      <input
+                        type="hidden"
+                        name="ssid"
+                        value="203221174430327217264"
+                      />
+                      <input type="hidden" name="id" value="1" />
+                      <input type="hidden" name="a" value="1" />
+                      <input type="hidden" name="ajax" value="138" />
+                    </div>
+                    <div class="pollLnk">
+                      <a
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="new _uWnd('PollR','Результаты опроса',660,200,{closeonesc:1,maxh:400},{url:'/poll/1'});return false;"
+                        >Результаты</a
+                      >
+                      |
+                      <a
+                        href="javascript://"
+                        rel="nofollow"
+                        onclick="new _uWnd('PollA','Архив опросов',660,250,{closeonesc:1,maxh:400,max:1,min:1},{url:'/poll/0-2'});return false;"
+                        >Архив опросов</a
+                      >
+                    </div>
+                    <div class="pollTot">Всего ответов: <b>30</b></div>
+                  </div>
+                </form>
+              </div>
+              <!-- </bc> -->
+            </div>
+          </div>
+
+          <!-- </block10> -->
+
+          <!--/U1CLEFTER1Z-->
+        </aside>
+
+        <!-- </middle> -->
+      </div>
+    </div>
+    <!--U1BFOOTER1Z-->
+    <footer>
+      <div id="footer">
+        <div class="wrapper">
+          <div class="foot-l">
+            <!-- <copy> -->Copyright STUDHELP &copy; 2021
+            <!-- </copy> -->
+          </div>
+          <div class="foot-r">STUDHELP</div>
+        </div>
+      </div>
+    </footer>
+    <!--/U1BFOOTER1Z-->
+    <div class="owerflow-layer"></div>
+    <div class="mm-wrapper">
+      <div class="mobile-menu-container">
+        <i class="material-icons i_close">close</i>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../s/t/1726/ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  </body>
+</html>
